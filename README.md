@@ -1,12 +1,19 @@
-# Project Title
+# Loan Qualifier App
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+Welcome to the Loan Qualifier App! This is a command line application to match applicants with qualifying loans. This is primarily to reduce time in processing and to allow our clients to self-navigate various banks and loans.
 
 ---
 
-## Technologies
+## Required Technologies Listed Below w/Download Links
+Your OS's command prompt is required to run this app.
+- Mac OS uses Terminal.app which is preinstalled
+    - more info on commands and how to navigate can be found [here]()
+- Windows users can access their "cmd" using [these steps](https://tutorial.djangogirls.org/en/intro_to_command_line/). More info on commands and how to navigate can be found [here](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+- [Python v3.9.16](https://www.python.org/downloads/)
+- Python libraries. You can use pip or conda to install the packages below:
+    - [Fire](https://google.github.io/python-fire/installation/)
+    - [Questionary](https://pypi.org/project/questionary/1.7.0/)
 
 ---
 
@@ -24,7 +31,9 @@ This section should include screenshots, code blocks, or animations explaining h
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+All code contributed by [@yv-i](https://github.com/yv-i)
+- [Email](mailto:josephknight.contact@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/josepheknight/)
 
 ---
 
