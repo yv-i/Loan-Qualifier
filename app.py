@@ -9,9 +9,10 @@ Example:
 import sys
 import fire
 import questionary
+import csv
 from pathlib import Path
 
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import load_csv#, save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -37,6 +38,18 @@ def load_bank_data():
         sys.exit(f"Oops! Can't find this path:{csvpath}")
 
     return load_csv(csvpath)
+
+# def save_qualifying_loan():
+#     """Asks the user where they would like to save their Qualifying Loans
+
+#      Returns:
+#         A Path to the CSV file they wish to save their data in
+#     """
+    
+#     csvpath = questionary.text("Where would you like to save your Qualifying Loan Data? (.csv):").ask()
+#     csvpath = Path(csvpath)
+
+#     return csvpath
 
 
 def get_applicant_info():
@@ -103,7 +116,7 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
     return bank_data_filtered
 
 
-def save_qualifying_loans(qualifying_loans):
+def save_qualifying_loans(a):
     """Saves the qualifying loans to a CSV file.
 
     Args:
@@ -111,6 +124,13 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    csvpath = questionary.text("Where would you like to save your Qualifying Loan Data? (.csv):").ask()
+    csvpath = Path(csvpath)
+
+    # return csvpath
+    with open(csvpath, "w", newline='') as f:
+        csvwriter = csv.writer(f)
+        csvwriter.writerows(a)
 
 
 def run():
