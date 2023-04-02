@@ -1,0 +1,50 @@
+  470  git commit -m 'added CLI to save results to new CSV'
+  471  git remote add origin 'https://github.com/yv-i/Loan-Qualifier.git'
+  472  git push -u origin master
+  473  git push -u origin master
+  474  git push -u origin master
+  475  git push -u origin master
+  476  git push -u origin master
+  477  git push -u origin master
+  478  git config --list
+  479  cd ..
+  480  cd ..
+  481  git clone https://github.com/yv-i/Loan-Qualifier.git
+  482  ls
+  483  cd GitUpload/
+  484  ls
+  485  cd loan_qualifier_app/
+  486  git --status
+  487  git status
+  488  git --version
+  489  git update
+  490  git --help
+  491  cd ..
+  492  git clone https://github.com/yv-i/Loan-Qualifier.git
+  493  cd Loan-Qualifier/
+  494  ls
+  495  code .
+  496  git push -u origin main
+  497  pwd
+  498  git add .
+  499  git status
+  500  git commit
+  501  cd Python/
+  502  ls
+  503  cd Module
+  504  cd Module2
+  505  ls
+  506  cd GitUpload/
+  507  ls
+  508  cd Loan-Qualifier/
+  509  ls
+  510  git status
+  511  git commit -m 'added .csv saver'
+  512  git push
+  513  git status
+  514  git commit -m "ran program and saved results to ./data/save.csv"
+  515  git add .
+  516  git status
+  517  git commit -m "ran program and saved results to ./data/save.csv"
+  518  git push
+  519  history 50 > terminal_history.txt
