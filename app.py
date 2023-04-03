@@ -124,13 +124,22 @@ def save_qualifying_loans(a):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
-    csvpath = questionary.text("Where would you like to save your Qualifying Loan Data? (.csv):").ask()
-    csvpath = Path(csvpath)
-
-    # return csvpath
-    with open(csvpath, "w", newline='') as f:
-        csvwriter = csv.writer(f)
-        csvwriter.writerows(a)
+    if len(a) != 0: # checks if list of qualifying loans isn't 0
+        # asks user if they want to save
+        save_option = questionary.select("Would you like to save the results to a .csv?", choices=["y","n"],).ask()
+        # checks user input
+        if save_option != "n":
+            # if yes, requests where they would like to create the .csv and save the info
+            csvpath = questionary.text("Where would you like to save your Qualifying Loan Data? (.csv):").ask()
+            csvpath = Path(csvpath)
+            # creates .csv file using user input stored in csvpath
+            with open(csvpath, "w", newline='') as f: 
+                csvwriter = csv.writer(f)
+                csvwriter.writerows(a)
+        # notifies the user that output won't be saved. 
+        else: print("Qualifying Loans not saved.")
+    else:
+        sys.exit("No Qualifying Loans Exist. GET YOUR GAME UP!") # exits out of the program if 0 qualifying loans
 
 
 def run():

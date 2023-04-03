@@ -1,10 +1,3 @@
-  470  git commit -m 'added CLI to save results to new CSV'
-  471  git remote add origin 'https://github.com/yv-i/Loan-Qualifier.git'
-  472  git push -u origin master
-  473  git push -u origin master
-  474  git push -u origin master
-  475  git push -u origin master
-  476  git push -u origin master
   477  git push -u origin master
   478  git config --list
   479  cd ..
@@ -48,3 +41,10 @@
   517  git commit -m "ran program and saved results to ./data/save.csv"
   518  git push
   519  history 50 > terminal_history.txt
+  520  ls
+  521  cat terminal_history.txt 
+  522  git add .
+  523  git status
+  524  git commit -m "added terminal command history"
+  525  git push
+  526  history 50 > terminal_history.txt
